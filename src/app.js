@@ -2,8 +2,8 @@ import express, { json } from 'express';
 import morgan from "morgan";
 
 /* IMPORT ROUTES */
-import projectsRoutes from "../routes/projects";
-import tasksRoutes from "../routes/tasks";
+import projectsRoutes from "../routes/projects.routes";
+import tasksRoutes from "../routes/tasks.routes";
 
 /* INITIALIZATING */
 const app = express();

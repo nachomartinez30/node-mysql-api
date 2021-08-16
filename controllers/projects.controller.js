@@ -22,7 +22,7 @@ export const getProjects = async (req, res, next) => {
         res.send(projects)
     } catch (error) {
         console.error(error);
-        res.send(error)
+        res.status(500).send(error)
     }
 }
 
