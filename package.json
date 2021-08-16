@@ -1,0 +1,36 @@
+{
+  "name": "mysql-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --output-dir dist",
+    "deploy": "node dist/index.js",
+    "start": "nodemon -L src/index.js --exec babel-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachomartinez30/node-mysql-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachomartinez30/node-mysql-api/issues"
+  },
+  "homepage": "https://github.com/nachomartinez30/node-mysql-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mariadb": "^2.5.4",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "nodemon": "^2.0.12"
+  }
+}
