@@ -1,7 +1,8 @@
 import { DataTypes, Sequelize } from "sequelize";
 import { db } from "../database/database";
+import Task from "./Task";
 
-const project = db.define('projects', {
+const Project = db.define('projects', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -24,5 +25,7 @@ const project = db.define('projects', {
 );
 
 /* RELATION WITH TASK */
+Project.hasMany(Task, { foreignKey: 'projectId', sourceKey: 'id' });
+Task.belongsTo(Project, { foreignKey: 'projectId', sourceKey: 'id' });
 
-export default project;
+export default Project;

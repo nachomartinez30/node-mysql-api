@@ -1,7 +1,7 @@
 import { DataTypes, Sequelize } from "sequelize";
 import { db } from "../database/database";
 
-const task = db.define('tasks', {
+const Task = db.define('tasks', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -20,4 +20,4 @@ const task = db.define('tasks', {
     { timestamps: false }
 );
 
-export default task;
+export default Task;

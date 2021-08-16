@@ -14,6 +14,6 @@ app.use(morgan('dev'));
 
 /* ROUTES CONFIG */
 app.use('/api/projects', projectsRoutes);
-app.use('/api/tasks', projectsRoutes);
+app.use('/api/tasks', tasksRoutes);
 
 export default app;

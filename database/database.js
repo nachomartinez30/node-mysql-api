@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-export const db = new Sequelize('node-projects', 'root', '', {
+export const db = new Sequelize('node-projects', 'root', 'z3nitr4m', {
     host: 'localhost',
     dialect: 'mariadb',
     port: 3306,
@@ -10,5 +10,5 @@ export const db = new Sequelize('node-projects', 'root', '', {
         require: 30000,
         idle: 10000,
     },
-    logging: true
+    logging: false
 });
