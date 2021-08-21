@@ -1,6 +1,6 @@
 import app from "./app";
-import { db } from '../database/database'
-const PORT = 4000;
+import { db } from './database/database'
+const PORT = 4001;
 
 const main = async () => {
     try {
